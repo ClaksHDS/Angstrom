@@ -5,100 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angstrom</title>
-    <link rel="stylesheet" href="../Angstrom/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-    <!-- Header & nav bar-->
-    <header>
-        <h1>Ångstrøm</h1>
-        <nav>
-            <ul>
-                <li>Our Mission</li>
-                <li>Portfolio</li>
-                <li>Our Team</li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Nav bar-->
+<nav class="nav">
+    <div class="nav-center">
+        <div class="nav-header">
+            <h1 class="logo">Angstrøm</h1>
+            <button type="button" class="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="links">
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">our team</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+</nav>
 
     <!--Banner section-->
 
-    <section class="banner_container">
-        <div class="missions">
+    <header class="hero">
+        <div class="banner-container">
             <h2>Make It Scandinavian</h2>
-            <h2>Emphasize clean lines, utility, and simple furnishings that are functional, beautiful, and cozy.</h2>
+            <br>
+            <h4>Emphasize clean lines, utility, and simple furnishings that are functional, beautiful, and cozy.</h4>
         </div>
-    </section>
+    </header>
 
     <!--Porfolio Gallery-->
-
-    <div class="featured">
+    <section class="portfolio">
+    
+     <div class="missions">
         <h2>Add a scandinavian touch to your interior</h2>
+        <br>
         <h4>A minimalistic style using a blend of textures and soft hues to make sleek, modern and inviting.</h4>
     </div>
-
-    <div class="container_gallery">
+    
+    <div class="container-gallery">
         <div class="trend">
-            <img src="../Angstrom/Images/portfolio/portfolio_1.jpg" alt="desk">
+            <img src="./Images/portfolio/img-2.jpg" alt="scandinavian furnitures">
             <h4>Use Warm Wood</h4>
+            <div class="underline"></div>
         </div>
         <div class="trend">
-            <img src="../Angstrom/Images/portfolio/portfolio_2.jpeg" alt="Reading area">
+            <img src="./Images/portfolio/img-5.jpg" alt="decoration elements">
             <h4>Mix Textures</h4>
+            <div class="underline"></div>
         </div>
         <div class="trend">
-            <img src="../Angstrom/Images/portfolio/porfolio_4.jpeg" alt="Dinner room" >
+            <img src="./Images/portfolio/img-6.jpg" alt="kitchen pots" >
             <h4>Add Contrast</h4>
+            <div class="underline"></div>
         </div>
         <div class="trend">
-            <img src="../Angstrom/Images/portfolio/portfolio_5.jpeg" alt="Dinner room">
+            <img src="./Images/portfolio/img-7.jpg" alt="Clay pots">
             <h4>Play With Natural Light</h4>
+            <div class="underline"></div>
         </div>
         <div class="trend">
-            <img src="../Angstrom/Images/portfolio/portfolio_3.jpeg" alt="Hallway">
+            <img src="./Images/portfolio/img-3.jpg" alt="white vase with dried flower">
             <h4>Use Muted Colors</h4>
+            <div class="underline"></div>
         </div>
     </div>
+    </section>
 
     <!--Team section-->
 
-    <section id="our-team">
-        <h2>Our Team</h2>
-
-            <div class="team-container">
-                <div class="team-box">
-                    <img src="../Angstrom/Images/Ida.png" alt="Ida Engvoll">
-                    <h3>Ida Engvoll</h3>
-                    <p>Partnerships & Marketing</p>
+    <section class="our-team-section">
+        <h2>Our Team.</h2>
+        <div class="team-container">
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="./Images/worker-1.jpg" alt="worker">
                 </div>
-            
-                <div class="team-box">
-                    <img src="../Angstrom/Images/David.png" alt="David Washington">
-                    <h3>David Washington</h3>
-                    <p>C E O & Founder</p>
-                </div>
-         
-                <div class="team-box">
-                    <img src="../Angstrom/Images/Gizam.png" alt="Gizam Erdogan">
-                    <h3>Gizam Erdogan</h3>
-                    <p>Research & Development</p>
-                </div>
+                <h4>Ida Logvoll</h4>
+                 <p>Partnerships & Marketing</p>
+                 <p>Green juice thundercats fam meh praxis drinking vinegar scenester snackwave pabst godard cray shabby chic cold-pressed air plant succulents.</p>
+                 <div class="underline"></div>
             </div>
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="./Images/worker-2.jpg" alt="worker">
+                </div>
+                <h4>Mila Brown</h4> 
+                <p>C E O & Founder</p>
+                <p>Tacos normcore master cleanse disrupt jianbing scenester. Heirloom meditation PBR&B, green juice leggings YOLO readymade four dollar toast jean shorts tumblr shoreditch.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="./Images/worker-3.jpg" alt="worker">
+                </div>
+                <h4>Matt Bronner</h4>
+                <p>Research & Development</p>
+                <p>Freegan migas try-hard snackwave, thundercats waistcoat occupy cronut adaptogen fixie leggings brooklyn. Ethical truffaut unicorn franzen tbh tilde.</p>
+                <div class="underline"></div>
+            </div>
+        </div>
     </section>
 
-    <!--Contact section-->
+    <!-- Footer section-->
 
-    <section class="contact">
-        <h2>Ångstrøm</h2>
-        <h5>contact@angstrom.com</h5>
-        <h5>555-867-2211</h5>
-    </section>
-
-    <!--Footer section-->
-
-    <footer>
-        <h5>copyright Ångstrøm Limited 2021</h5>
+    <footer class="contact">
+        <h1>Ångstrøm</h1>
+        <div class="contact-info" id="contact">
+            <a href="#"><p>contact@angstrom.com</p></a>
+            <p>555-867-2211</p>
+        </div>
+        <p> &copy; copyright Ångstrøm Limited 2022</p>
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 </html>
