@@ -15,16 +15,16 @@
 <body>
 
     <!-- Nav bar-->
-<nav class="nav">
+<nav class="nav" id="nav">
     <div class="nav-center">
         <div class="nav-header">
             <h1 class="logo">Angstrøm</h1>
             <button type="button" class="nav-toggle"><i class="fas fa-bars"></i></button>
         </div>
         <ul class="links">
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">our team</a></li>
-            <li><a href="#">contact us</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#team">our team</a></li>
+            <li><a href="#contact">contact us</a></li>
         </ul>
         <ul class="social-icons">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -45,12 +45,12 @@
     </header>
 
     <!--Porfolio Gallery-->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
     
      <div class="missions">
         <h2>Add a scandinavian touch to your interior</h2>
         <br>
-        <h4>A minimalistic style using a blend of textures and soft hues to make sleek, modern and inviting.</h4>
+        <h4>A minimalistic style using a blend of textures and soft hues to make sleek, modern and inviting interiors.</h4>
     </div>
     
     <div class="container-gallery">
@@ -84,36 +84,36 @@
 
     <!--Team section-->
 
-    <section class="our-team-section">
+    <section class="our-team-section" id="team">
         <h2>Our Team.</h2>
         <div class="team-container">
-            <div class="team-box">
+            <article class="team-box">
                 <div class="team-img">
                     <img src="./Images/worker-1.jpg" alt="worker">
                 </div>
-                <h4>Ida Logvoll</h4>
-                 <p>Partnerships & Marketing</p>
-                 <p>Green juice thundercats fam meh praxis drinking vinegar scenester snackwave pabst godard cray shabby chic cold-pressed air plant succulents.</p>
+                <h4 id="person">Ida Logvoll</h4>
+                 <p id="job">Partnerships & Marketing</p>
                  <div class="underline"></div>
-            </div>
-            <div class="team-box">
+                 <p id="info">Green juice thundercats fam meh praxis drinking vinegar scenester snackwave pabst godard cray shabby chic cold-pressed air plant succulents.</p>
+            </article>
+            <article class="team-box">
                 <div class="team-img">
                     <img src="./Images/worker-2.jpg" alt="worker">
                 </div>
-                <h4>Mila Brown</h4> 
-                <p>C E O & Founder</p>
-                <p>Tacos normcore master cleanse disrupt jianbing scenester. Heirloom meditation PBR&B, green juice leggings YOLO readymade four dollar toast jean shorts tumblr shoreditch.</p>
+                <h4 id="person">Mila Brown</h4> 
+                <p id="job">C E O & Founder</p>
                 <div class="underline"></div>
-            </div>
-            <div class="team-box">
+                <p id="info">Tacos normcore master cleanse disrupt jianbing scenester. Heirloom meditation PBR&B, green juice leggings YOLO readymade four dollar toast jean shorts tumblr shoreditch.</p>
+            </article>
+            <article class="team-box">
                 <div class="team-img">
                     <img src="./Images/worker-3.jpg" alt="worker">
                 </div>
-                <h4>Matt Bronner</h4>
-                <p>Research & Development</p>
-                <p>Freegan migas try-hard snackwave, thundercats waistcoat occupy cronut adaptogen fixie leggings brooklyn. Ethical truffaut unicorn franzen tbh tilde.</p>
+                <h4 id="person">Matt Bronner</h4>
+                <p id="job">Research & Development</p>
                 <div class="underline"></div>
-            </div>
+                <p id="info">Freegan migas try-hard snackwave, thundercats waistcoat occupy cronut adaptogen fixie leggings brooklyn. Ethical truffaut unicorn franzen tbh tilde.</p>
+            </article>
         </div>
     </section>
 
@@ -125,7 +125,16 @@
             <a href="#"><p>contact@angstrom.com</p></a>
             <p>555-867-2211</p>
         </div>
-        <p> &copy; copyright Ångstrøm Limited 2022</p>
+        <div class="icons-container">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+           <p> &copy; copyright Ångstrøm Limited 2022</p> 
+        </div>
     </footer>
 
     <script src="./app.js"></script>

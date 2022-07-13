@@ -31,7 +31,7 @@ html{
 --textColor : var(--primary500);
 --maxWidth: 1120px;
 --fixedWidth: 600px;
---transition: 0.3s ease-in-out all;
+--transition: 0.3s ease-in all;
 --border-radius :0.25rem;
  /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -42,6 +42,7 @@ html{
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
+/*Global Styles */
 body{
     background-color: var(--backgroundColor);
     font-family: var(--bodyFont);
@@ -98,8 +99,10 @@ Nav Bar
 */
 
 .nav{
+    background: var(--white);
     box-shadow: var(--shadow-1);
-    line-height: 1;    
+    line-height: 1; 
+
 }
 .nav-header{
   display: flex;
@@ -164,8 +167,8 @@ Nav Bar
         padding: 0;
     }
     .links{
-        display: flex;
         height: auto;
+        display: flex;
     }
     .links a{
         padding: 0;
@@ -189,6 +192,16 @@ Nav Bar
     .social-icons a:hover{
         color: var(--primary300);
     }
+}
+/*fixed navbar*/
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    z-index: 2;
+    box-shadow: var(--shadow-2);
 }
 
 /*
@@ -231,6 +244,9 @@ Hero
 Portfolio Section
 ===============
 */
+.portfolio{
+    padding: 2rem 0;
+}
 .missions{
     text-align: center;
     padding: 2rem 0;
@@ -294,70 +310,75 @@ Our Team Section
 ===============
 */
 .our-team-section{
-    max-width: 100%;
+    background-image: linear-gradient(to right top, #ede5bf, #efe8c1, #f0ebc3, #f2efc6, #f3f2c8);
     padding: 2rem 0;
-    background-image: linear-gradient(to right top, #f4de9b, #f2dfa2, #f1e0a9, #efe0af, #eee1b6);
-    box-shadow: var(--shadow-3);
 }
 .our-team-section h2{
     text-align: center;
-    padding-bottom: 2rem;
 }
 .team-container{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-.team-container img{
-    height: 350px;
-    border-radius: var(--border-radius);
+    max-width: var(--maxWidth);
+    width: 80vw;
+    margin: 2rem auto;
 }
 .team-box{
-    padding-bottom: 2rem;
-
-}
-.team-box h4,
-.team-box p{
-    text-align: center;
-}
-.team-box h4{
-    padding-top: 0.5rem;
-    color: var(--primary400);
-}
-.team-box p{
-    color: var(--primary400);
-}
-.team-img::before{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border: 0.4rem solid var(--primary200);
-    top: -1rem;
-    left: 1rem;
+    background: var(--white);
     border-radius: var(--border-radius);
-    }
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.team-box:hover{
+    box-shadow: var(--shadow-3);
+}
 .team-img{
-    position: relative;
-    }
-img{
-    position: relative;
-    }
-
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+.team-img img{
+    height: 100%;
+    border-radius: 50%;
+}
+#person{
+    font-weight: 550;
+    letter-spacing: 1px;
+    color: var(--primary400);
+}
+#job{
+    text-transform: uppercase;
+    font-weight: 540;
+    color: var(--primary300);
+    font-size: 0.85rem;
+    margin: 0 auto;
+}
+#info{
+    color: var(--primary200);
+    margin-bottom: 0.65rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
 @media screen and (min-width: 768px) {
     .team-container{
-        grid-template-columns: repeat(2,1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 }
-
+@media screen and (min-width: 1170px) {
+    .team-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 /*
 =============== 
 Contact section
 ===============
 */
 .contact{
-    max-width: var(--maxWidth);
     padding-top: 1.5rem;
     display: grid;
     place-items: center;
@@ -380,3 +401,25 @@ Contact section
 .contact-info a:hover{
     text-decoration: underline;
 }
+.icons-container ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;    
+    transition: var(--transition);
+}
+.icons-container ul a{
+    color: var(--primary600);
+    padding: 0 0.5rem;
+    font-size: 1.75rem;
+}
+.icons-container a:hover{
+    color: var(--primary300);
+}
+.copyright{
+    background: var(--black);
+    color: var(--white);
+    width: 100%;
+    padding: 0 2rem;
+    display: grid;
+    place-items: center;
+}    
