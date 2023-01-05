@@ -12,8 +12,8 @@ On smaller devices, there is a sidebar to navigate easily on the page, as well a
 
 ## Styling Tools
 - **Unsplash** : to get free images 
-- ** FontAwesome ** : to get the icons for the social media and the sidebar
+- **FontAwesome** : to get the icons for the social media and the sidebar
 
 ## Management Tools
-- ** GitHub Desktop ** : to handle version control
+- **GitHub Desktop** : to handle version control
 
