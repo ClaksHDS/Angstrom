@@ -321,13 +321,21 @@ Our Team Section
 ===============
 */
 .our-team-section {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right top,
     #ede5bf,
     #efe8c1,
     #f0ebc3,
     #f2efc6,
     #f3f2c8
+  ); */
+  background-image: linear-gradient(
+    to right top,
+    #fffcf2,
+    #fcf8ed,
+    #faf4e9,
+    #f7efe4,
+    #f5ebe0
   );
   padding: 2rem 0;
 }
@@ -340,7 +348,7 @@ Our Team Section
   margin: 2rem auto;
 }
 .team-box {
-  background: var(--white);
+  background: #fefdfb;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-1);
   transition: var(--transition);
@@ -374,7 +382,7 @@ Our Team Section
   margin: 0 auto;
 }
 #info {
-  color: var(--primary200);
+  color: var(--primary300);
   margin-bottom: 0.65rem;
   text-align: center;
   font-size: 0.85rem;
@@ -403,6 +411,7 @@ Contact section
   margin: 0 auto;
 }
 .contact h1 {
+  padding-top: 1.5rem;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -420,6 +429,7 @@ Contact section
   text-decoration: underline;
 }
 .icons-container ul {
+  padding-bottom: 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -433,11 +443,17 @@ Contact section
 .icons-container a:hover {
   color: var(--primary300);
 }
+
+/*
+=============== 
+Footer
+===============
+*/
 .copyright {
   background: var(--black);
   color: var(--white);
   width: 100%;
-  padding: 0 2rem;
+  padding: 1.5rem;
   display: grid;
   place-items: center;
 }
