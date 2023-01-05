@@ -142,7 +142,7 @@ Nav Bar
   transition: var(--transition);
 }
 .links a:hover {
-  background: var(--primary600);
+  background: var(--primary500);
   color: var(--primary100);
   padding-left: 1.5rem;
 }
@@ -165,7 +165,7 @@ Nav Bar
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .nav-header {
     padding: 0;
@@ -181,7 +181,7 @@ Nav Bar
   .links a:hover {
     padding: 0;
     background: transparent;
-    text-decoration: underline;
+    border-bottom: 1px solid var(--primary600);
     color: var(--primary600);
   }
   .social-icons {
