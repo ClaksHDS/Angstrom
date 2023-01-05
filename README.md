@@ -1,5 +1,5 @@
 # Ängstrøm
-Project for the landing page of a fictionary design company.
+Project for the landing page of a fictional design company.
 A CodeCademy project, the goal was to design and build the homepage for an existing or fictional company. The website had to be responsive. 
 
 ## Features
