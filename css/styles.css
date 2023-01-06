@@ -232,7 +232,7 @@ Hero
   max-width: var(--fixedWidth);
 }
 .banner-container h2,
-.banner-container h4 {
+.banner-container h3 {
   color: var(--white);
   letter-spacing: 2px;
 }
@@ -243,7 +243,7 @@ Hero
   .banner-container h2 {
     font-size: 3.25rem;
   }
-  .banner-container h4 {
+  .banner-container h3 {
     font-size: 2rem;
     line-height: 1.65;
   }
@@ -372,17 +372,17 @@ Our Team Section
 #person {
   font-weight: 550;
   letter-spacing: 1px;
-  color: var(--primary400);
+  color: var(--primary500);
 }
 #job {
   text-transform: uppercase;
   font-weight: 540;
-  color: var(--primary300);
+  color: var(--primary400);
   font-size: 0.85rem;
   margin: 0 auto;
 }
 #info {
-  color: var(--primary300);
+  color: var(--primary400);
   margin-bottom: 0.65rem;
   text-align: center;
   font-size: 0.85rem;
