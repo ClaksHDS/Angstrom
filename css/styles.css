@@ -141,7 +141,8 @@ Nav Bar
   padding: 0.65rem 1rem;
   transition: var(--transition);
 }
-.links a:hover {
+.links a:hover,
+.links a:focus {
   background: var(--primary500);
   color: var(--primary100);
   padding-left: 1.5rem;
@@ -178,7 +179,8 @@ Nav Bar
     padding: 0;
     margin: 0 0.5rem;
   }
-  .links a:hover {
+  .links a:hover,
+  .links a:focus {
     padding: 0;
     background: transparent;
     border-bottom: 1px solid var(--primary600);
@@ -193,7 +195,8 @@ Nav Bar
     transition: var(--transition);
     font-size: 1.5rem;
   }
-  .social-icons a:hover {
+  .social-icons a:hover,
+  .social-icons a:focus {
     color: var(--primary300);
   }
   .logo {
@@ -348,7 +351,8 @@ Our Team Section
   margin-bottom: 2rem;
   padding: 1rem;
 }
-.team-box:hover {
+.team-box:hover,
+.team-box:focus {
   box-shadow: var(--shadow-3);
 }
 .team-img {
@@ -417,7 +421,8 @@ Contact section
   color: var(--primary400);
   transition: var(--transition);
 }
-.contact-info a:hover {
+.contact-info a:hover,
+.contact-info a:focus {
   text-decoration: underline;
 }
 .icons-container ul {
@@ -432,7 +437,8 @@ Contact section
   padding: 0 0.5rem;
   font-size: 1.75rem;
 }
-.icons-container a:hover {
+.icons-container a:hover,
+.icons-container a:focus {
   color: var(--primary300);
 }
 
