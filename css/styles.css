@@ -234,10 +234,14 @@ Hero
   text-align: center;
   max-width: var(--fixedWidth);
 }
-.banner-container h2,
-.banner-container h3 {
+.banner-container h1,
+.banner-container h2 {
   color: var(--white);
   letter-spacing: 2px;
+  line-height: 1.5;
+}
+.banner-container h2 {
+  text-transform: none;
 }
 @media screen and (min-width: 1170px) {
   .banner-container {
@@ -269,9 +273,12 @@ Portfolio Section
 .missions h2,
 h3 {
   color: var(--primary400);
+  letter-spacing: 0.05em;
 }
 .missions h3 {
   font-size: 1.2rem;
+  line-height: 1.5;
+  text-transform: none;
 }
 
 .container-gallery {
@@ -380,8 +387,9 @@ Our Team Section
 #info {
   color: var(--primary400);
   margin-bottom: 0.65rem;
-  text-align: center;
+  text-align: left;
   font-size: 0.85rem;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .team-container {
